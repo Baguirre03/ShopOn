@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    --grey: #49444B;
+    --white: #FFFFFF;
+    --pink: #C7B7CD;
+    --brown: #7E5537;
+    --defaultPadding: 2rem;
+}
+
+@font-face {
+    font-family: "bogart";
+    src: url('../assets/bogart/Bogart-Regular-trial.ttf');
+}
+
+@font-face {
+    font-family: "hertical";
+    src: url("../assets/hertical.ttf");
+}
+
+.main {
+    height: 100vh;
+    background-image: url(../assets/hero-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+}
+
+.home-page {
+    height: 100%;
+    width: 100%;
+    font-family: "bogart";
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--defaultPadding);
+    box-sizing: border-box;
+    color: var(--white);
+}
+
+.top-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-home h4 {
+    font-family: "hertical";
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.cta-header {
+    display: flex;
+    gap: 20px;
+}
+
+.middle-home {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan {
+    font-size: 75px;
+}
+
+.description {
+    font-size: 50px;
+}
+
+.bottom-home {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.default-white {
+    font-size: 16px;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    color: var(--grey);
+    background-color: var(--white);
+}
+
+.default-white:hover {
+    background-color: var(--grey);
+    color: var(--white);
+    transition: all .8s;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+/* SIGNUP STLYING */
+
+.sign-up-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--pink);
+}
+
+.signup {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: var(--defaultPadding);
+    box-sizing: border-box;
+    background-color: var(--pink);
+}
+
+.left-signup {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.right-signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.right-signup img {
+    height: 20rem;
+    width: 15rem;
+}
