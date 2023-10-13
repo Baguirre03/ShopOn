@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Button = ({ onClick, className, children, to }) => {
+const Button = ({ onClick, className, children, to, spanClass }) => {
   if (!className) {
     className = "default-white";
   } else {
@@ -14,7 +14,7 @@ const Button = ({ onClick, className, children, to }) => {
     </Link>
   ) : (
     <button className={className} onClick={onClick}>
-      {children}
+      <span className={spanClass}>{children}</span>
     </button>
   );
 };

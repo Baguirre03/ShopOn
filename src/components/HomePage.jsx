@@ -11,13 +11,15 @@ export default function HomePage() {
         </div>
       </div>
       <div className="middle-home">
-        <h1 className="slogan">ShopQuick with ShopOn</h1>
-        <p className="description">Get timeless looks, anytime</p>
+        <p className="slogan">ShopQuick with ShopOn</p>
+        <p className="description">timeless looks, anytime</p>
         <Button to="shop">Shop Now</Button>
       </div>
       <div className="shop-now-cta"></div>
       <div className="bottom-home">
-        <Button>Become a Driver</Button>
+        <Button className="slant" spanClass="button-child">
+          Become a Driver
+        </Button>
       </div>
     </header>
   );
