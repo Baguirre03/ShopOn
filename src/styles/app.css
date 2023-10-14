@@ -77,6 +77,10 @@
     gap: 20px;
 }
 
+.middle-home button {
+    font-size: 20px;
+}
+
 .slogan {
     display: flex;
     font-size: 70px;
@@ -116,6 +120,11 @@
 
 .default-brown {
     background-color: var(--brown);
+    color: var(--white);
+}
+
+.default-brown:hover {
+    background-color: var(--grey);
     color: var(--white);
 }
 
@@ -309,6 +318,7 @@ button:hover {
 
 .why-img-desc {
     display: grid;
+    align-items: center;
     grid-template-columns: .5fr 2fr;
 }
 
@@ -331,12 +341,123 @@ button:hover {
     justify-content: center;
 }
 
-.why-img-desc img {
-}
 
 @media (max-width: 1160px) {
     .driver {
         flex-direction: column;
         padding: none;
     }
+
+    .left-driver {
+        padding: 0;
+    }
+
+    .driver-title {
+        font-size: 3.4rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .why-img-desc {
+        grid-template-columns: 1fr;
+    }
+
+    .image-container {
+        display: none;
+    }
+}
+
+/* WELCOME FUTURE DRIVER SIGNUP */
+
+.welcome-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: var(--white);
+    padding: var(--defaultPadding);
+    height: 80vh;
+}
+
+.welcome-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.welcome-left h2 {
+    font-size: 55px;
+    font-weight: normal;
+    font-family: "bogart";
+    color: var(--grey);
+}
+
+.welcome-left p {
+    font-size: 25px;
+    font-weight: normal;
+    font-family: "bogart";
+    color: var(--grey);
+}
+
+.welcome-right {
+    display: flex;
+    color: var(--grey);
+    font-family: "bogart";
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    gap: 15px;
+    width: 100%;
+}
+
+.welcome-right input {
+    background-color: #D8D8D8;
+    outline: none;
+    border: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    font-size: 15px;
+    /* background-image: linear-gradient(to bottom, #e4e4e4, #f7f7f7); */
+
+}
+
+.OR {
+    font-size: 20px;
+    width: 50%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+}
+
+.or-span {
+    background:#fff; 
+    padding:0 10px; 
+}
+
+.sign-in {
+    display: flex;
+    padding: 8px 30px 8px 30px;
+    height: min-content;
+    width: 50%;
+    border-radius: 5px;
+    align-items: center;
+    border: none;
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sign-in-img {
+    height: 10%;
+    width: 10%;
 }

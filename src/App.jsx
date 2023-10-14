@@ -2,6 +2,7 @@ import "./styles/app.css";
 import HomePage from "./components/HomePage";
 import SignUp from "./components/SignUp";
 import WhyDrive from "./components/Why";
+import WelcomeDriver from "./components/DriverSignup";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       </div>
       <SignUp></SignUp>
       <WhyDrive></WhyDrive>
+      <WelcomeDriver></WelcomeDriver>
     </>
   );
 }
