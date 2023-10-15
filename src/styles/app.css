@@ -6,6 +6,8 @@
     --brown: #7E5537;
     --defaultPadding: 2rem;
     --h1-fontSize: 60px;
+    box-sizing: border-box;
+    --h2-fontSize: 55px;
 }
 
 @font-face {
@@ -481,6 +483,8 @@ button:hover {
 }
 
 
+/* SIGN IN CSS */
+
 .sign-in-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -524,12 +528,20 @@ button:hover {
     border-radius: 10px;
     font-size: 25px;
     gap: 20px;
+    border: 1px solid black;
 }
 
 .sign-in-form input {
     outline: 5px solid white;
     background-color: var(--grey);
     color: var(--white);
+}
+
+.sign-in-form input:focus {
+    background-color: var(--white);
+    outline: 5px solid black;
+    transition: .6s all;
+    color: black;
 }
 
 .sign-in-form button {
@@ -568,5 +580,109 @@ button:hover {
     }
     .sign-in-img-user {
         display: none;
+    }
+}
+
+
+/* HOME PAGE STORES NEAR YOU CSS */
+
+
+.home-search-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    padding: var(--defaultPadding);
+}
+
+.search-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    height: 7vh;
+    background-color: var(--pink);
+    width: 110%;
+}
+
+.search-container svg {
+    padding: 3px;
+    width: 10vw;
+}
+
+.home-search-container h2 {
+    font-size: var(--h2-fontSize);
+    color: var(--grey);
+    background-color: var(--white);
+}
+
+.address-search {
+    display: flex;
+    font-size: 20px;
+    border-radius: 0;
+    align-items: center;
+    width: 120%;
+    height: 7vh;
+    background-color: var(--pink);
+    color: white;
+}
+
+.address-search::placeholder {
+    margin-right: 100px;
+    color: var(--white);
+    text-align:center;
+}
+
+.search-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    gap: 10px;
+}
+
+.home-card {
+    display: flex;
+    font-family: "garet";
+    font-size: 17px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: min-content;
+    padding: 15px;
+    gap: 15px;
+    height: 14vh;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.home-card:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--pink);
+    transition: .2s all;
+    transform: translateY(-2px);
+}
+
+.image-container-card {
+    width: 30%;
+}
+
+.home-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 560px) {
+    .home-search-container h2 {
+        text-align: center;
+    }
+
+    .search-card-container {
+        grid-template-columns: 1fr;
     }
 }

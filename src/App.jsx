@@ -4,6 +4,7 @@ import SignUp from "./components/SignUp";
 import WhyDrive from "./components/Why";
 import WelcomeDriver from "./components/DriverSignup";
 import SignIn from "./components/SignIn";
+import HomeSearch from "./components/HomePagelookUp";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <WelcomeDriver></WelcomeDriver>
       <WhyDrive></WhyDrive>
       <SignIn></SignIn>
+      <HomeSearch></HomeSearch>
     </>
   );
 }
