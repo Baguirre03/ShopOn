@@ -355,6 +355,10 @@ button:hover {
     .driver-title {
         font-size: 3.4rem;
     }
+
+    .welcome-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 800px) {
@@ -413,7 +417,7 @@ button:hover {
     width: 100%;
 }
 
-.welcome-right input {
+ input {
     background-color: #D8D8D8;
     outline: none;
     border: none;
@@ -460,4 +464,109 @@ button:hover {
 .sign-in-img {
     height: 10%;
     width: 10%;
+}
+
+
+@media (max-width: 1240px) {
+    .welcome-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 660px) {
+    .welcome-left {
+        text-align: center;
+    }
+}
+
+
+.sign-in-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in-img-user {
+    width: 100%;
+    height: 100%;
+    background: url('../assets/signin.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.sign-in-img img {
+    width: 100%;
+    height: auto;
+}
+
+.right-side-sign-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.sign-in-form {
+    background-color: var(--grey);
+    color: var(--white);
+    font-family: "bogart";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 25px;
+    gap: 20px;
+}
+
+.sign-in-form input {
+    outline: 5px solid white;
+    background-color: var(--grey);
+    color: var(--white);
+}
+
+.sign-in-form button {
+    font-family: "bogart";
+    font-size: 25px;
+    width: 50%;
+    background-color: var(--white);
+    outline: none;
+    border: none;
+    color: var(--grey);
+}
+
+.svg-container-person {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    resize: both;
+    overflow: none;
+    fill: var(--white);
+   }
+   
+.sign-in-person {
+    width: 95%;
+    height: 95%;
+}
+
+.line {
+    display:block;
+    width: 24%;
+    border-top: 7px solid var(--white)
+}
+
+@media (max-width: 845px) {
+    .sign-in-container {
+        grid-template-columns: 1fr;
+    }
+    .sign-in-img-user {
+        display: none;
+    }
 }

@@ -3,6 +3,7 @@ import HomePage from "./components/HomePage";
 import SignUp from "./components/SignUp";
 import WhyDrive from "./components/Why";
 import WelcomeDriver from "./components/DriverSignup";
+import SignIn from "./components/SignIn";
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
         <HomePage></HomePage>
       </div>
       <SignUp></SignUp>
-      <WhyDrive></WhyDrive>
       <WelcomeDriver></WelcomeDriver>
+      <WhyDrive></WhyDrive>
+      <SignIn></SignIn>
     </>
   );
 }
