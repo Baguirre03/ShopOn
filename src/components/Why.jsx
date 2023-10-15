@@ -11,11 +11,15 @@ export default function WhyDrive() {
         <h2 className="driver-title">Become a Driver</h2>
         <div className="left-driver-section">
           <p>Look dashing while on the go with our casual wear Items</p>
-          <Button className="default-pink">Sign up Today</Button>
+          <Button to="signup-driver" className="default-pink">
+            Sign up Today
+          </Button>
         </div>
         <div className="left-driver-section">
           <p>Did you already apply or are you already a driver? Log in here</p>
-          <Button className="default-pink">Log in</Button>
+          <Button to="login" className="default-pink">
+            Log in
+          </Button>
         </div>
         <p className="faq-callout">Have any questions? Visit our FAQ page</p>
       </div>
@@ -69,8 +73,8 @@ export default function WhyDrive() {
               </desc>
             </div>
           </div>
-          <Button className="default-brown">
-            Learn more about how it works
+          <Button to="signup-driver" className="default-brown">
+            Start earning extra money now
           </Button>
         </div>
       </div>

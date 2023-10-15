@@ -130,6 +130,21 @@
     color: var(--white);
 }
 
+.default-gray {
+    background-color: var(--grey);
+    color: var(--white);
+}
+
+.default-gray:hover {
+    background: var(--brown);
+}
+
+.back {
+    position: absolute;
+    bottom: 0;
+    transform: translate(20px, -20px);
+}
+
 .slant {
     padding: 20px 15px 20px 15px;
     -ms-transform: skewX(-20deg);
@@ -324,7 +339,7 @@ button:hover {
     grid-template-columns: .5fr 2fr;
 }
 
-.right-driver button {
+.right-driver a {
     align-self: center;
     width: max-content;
 }
@@ -385,7 +400,7 @@ button:hover {
     align-items: center;
     background-color: var(--white);
     padding: var(--defaultPadding);
-    height: 80vh;
+    height: 100vh;
 }
 
 .welcome-left {

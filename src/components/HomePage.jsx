@@ -17,7 +17,7 @@ export default function HomePage() {
       </div>
       <div className="shop-now-cta"></div>
       <div className="bottom-home">
-        <Button className="slant" spanClass="button-child">
+        <Button to="signup-driver" className="slant" spanClass="button-child">
           Become a Driver
         </Button>
       </div>
