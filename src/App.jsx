@@ -5,6 +5,9 @@ import WhyDrive from "./components/Why";
 import WelcomeDriver from "./components/DriverSignup";
 import SignIn from "./components/SignIn";
 import HomeSearch from "./components/HomePagelookUp";
+import Track from "./components/TrackOrder";
+import CheckoutInfo from "./components/CheckoutInfo";
+import About from "./components/About";
 
 function App() {
   return (
@@ -12,11 +15,15 @@ function App() {
       <div className="main">
         <HomePage></HomePage>
       </div>
-      <SignUp></SignUp>
-      <WelcomeDriver></WelcomeDriver>
-      <WhyDrive></WhyDrive>
-      <SignIn></SignIn>
       <HomeSearch></HomeSearch>
+      <Track></Track>
+      <CheckoutInfo></CheckoutInfo>
+      <SignUp></SignUp>
+
+      <WhyDrive></WhyDrive>
+      <WelcomeDriver></WelcomeDriver>
+      <SignIn></SignIn>
+      <About></About>
     </>
   );
 }

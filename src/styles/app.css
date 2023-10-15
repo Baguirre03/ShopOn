@@ -368,6 +368,10 @@ button:hover {
         grid-template-columns: 1fr;
     }
 
+    .right-driver {
+        padding: 0;
+    }
+
     .image-container {
         display: none;
     }
@@ -554,18 +558,10 @@ button:hover {
     color: var(--grey);
 }
 
-.svg-container-person {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    resize: both;
-    overflow: none;
-    fill: var(--white);
-   }
-   
 .sign-in-person {
-    width: 95%;
-    height: 95%;
+    width: 40%;
+    fill: var(--white);
+    height: 30%;
 }
 
 .line {
@@ -619,6 +615,7 @@ button:hover {
 .home-search-container h2 {
     font-size: var(--h2-fontSize);
     color: var(--grey);
+    font-weight: normal;
     background-color: var(--white);
 }
 
@@ -684,5 +681,149 @@ button:hover {
 
     .search-card-container {
         grid-template-columns: 1fr;
+    }
+}
+
+/* TRACK YOUR ORDER CSS */
+
+.track-order-container {
+    padding: 4rem;
+    font-family: "bogart";
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pink);
+}
+
+.track-order-container h2 {
+    font-weight: normal;
+    font-size: var(--h1-fontSize);
+}
+
+.track-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 32px;
+}
+
+.track-content p {
+    width: 20%;
+    color: var(--white);
+}
+
+.track-content img {
+    width: 40%;
+    height: 90%;
+    background-color: var(--pink);
+}
+
+@media (max-width: 865px) {
+    .track-content img {
+        width: 30%;
+        height: 80%;
+    }
+
+    .track-content p {
+        width: 50%;
+    }
+}
+
+/* CHECKOUT INFO CSS */
+
+.checkout-info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    width: 100vw;
+}
+
+.checkout-image {
+    background-image: url('../assets/leftabout.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.right-side-checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.right-side-checkout h4 {
+    font-weight: normal;
+    font-size: 40px;
+    font-family: "garet";
+}
+
+.right-side-checkout ul {
+    font-size: 23px;
+    font-family: "garet";
+    width: 85%;
+}
+
+@media (max-width: 690px) {
+    .checkout-info-container {
+        display: flex;
+        border-bottom: 1px dashed var(--grey) ;
+    }
+
+    .checkout-image {
+        display: none;
+    }
+}
+
+/* ABOUT CSS */
+
+.about-container {
+    color: var(--white);
+    padding: 4rem;
+    height: 100vh;
+    width: 100vw;
+    background: url('../assets/aboutus.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 1fr 40px;
+}
+
+.contacts {
+    display: flex;
+    font-family: "garet";
+    font-size: 40px;
+    align-items: center;
+    gap: 20%;
+}
+
+.phone {
+    font-family: "garet";
+}
+
+.address {
+    font-size: 20px;
+}
+
+
+.about-container h2 {
+    font-size: 25px;
+    font-family: "hertical";
+}
+
+@media (max-width: 850px) {
+    .contacts {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0;
+        font-size: 33px;
     }
 }
