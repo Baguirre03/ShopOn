@@ -1,5 +1,5 @@
-import BackButton from "./BackButton";
-import Button from "./Button";
+import BackButton from "../HelperComponents/BackButton";
+import Button from "../HelperComponents/Button";
 
 export default function WelcomeDriver({ driver }) {
   return (

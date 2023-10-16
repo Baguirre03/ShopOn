@@ -1,11 +1,11 @@
 import "./styles/app.css";
-import HomePage from "./components/HomePage";
-import SignUp from "./components/SignUp";
-import WhyDrive from "./components/Why";
-import HomeSearch from "./components/HomePagelookUp";
-import Track from "./components/TrackOrder";
-import CheckoutInfo from "./components/CheckoutInfo";
-import About from "./components/About";
+import HomePage from "./components/Pages/HomePage";
+import SignUp from "./components/Pages/SignUp";
+import WhyDrive from "./components/Pages/Why";
+import HomeSearch from "./components/Pages/HomePagelookUp";
+import Track from "./components/Pages/TrackOrder";
+import CheckoutInfo from "./components/Pages/CheckoutInfo";
+import About from "./components/Pages/About";
 
 function App() {
   return (

@@ -1,4 +1,4 @@
-import HomeCard from "./HomeCard";
+import HomeCard from "../HelperComponents/HomeCard";
 import nike from "../assets/nike.png";
 import zara from "../assets/zara.png";
 import nordstrom from "../assets/nordstrom.svg";

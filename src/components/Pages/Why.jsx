@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "../HelperComponents/Button";
 import money from "../assets/money.png";
 import people from "../assets/people.png";
 import clock from "../assets/clock.png";

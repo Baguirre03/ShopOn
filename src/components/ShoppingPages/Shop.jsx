@@ -9,13 +9,17 @@ const deals = [
   { name: "Price" },
 ];
 
+const categories = [
+  { name: "Trending" },
+  { name: "Womens" },
+  { name: "Mens" },
+  { name: "Kids" },
+  { name: "Beauty" },
+];
+
 export default function Shop() {
   const { name } = useParams();
   const [selected, setSelected] = useState("Store");
-
-  function handleClick(name) {
-    setSelected(name);
-  }
 
   return (
     <div>
@@ -25,11 +29,28 @@ export default function Shop() {
         <input></input>
       </div>
       <div className="categories">
-        <button className="category">Trending</button>
-        <button className="category">Women's</button>
-        <button className="category">Men's</button>
-        <button className="category">Kid's</button>
-        <button className="category">Beauty</button>
+        {categories.map((deal) => {
+          if (deal.name === selected) {
+            return (
+              <button
+                onClick={() => setSelected(deal.name)}
+                key={deal.name}
+                className={"deal selected"}
+              >
+                {deal.name}
+              </button>
+            );
+          }
+          return (
+            <button
+              onClick={() => setSelected(deal.name)}
+              key={deal.name}
+              className="deal"
+            >
+              {deal.name}
+            </button>
+          );
+        })}
       </div>
       <div className="deals">
         {deals.map((deal) => {

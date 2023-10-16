@@ -1,9 +1,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
-import SignIn from "./components/SignIn";
-import WelcomeDriver from "./components/DriverSignup";
-import Shop from "./components/Shop";
-import { element } from "prop-types";
+import SignIn from "./components/LoginSignup/SignIn";
+import WelcomeDriver from "./components/LoginSignup/DriverSignup";
+import Shop from "./components/Pages/Shop";
 
 const Router = () => {
   const router = createBrowserRouter([

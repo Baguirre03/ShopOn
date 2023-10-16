@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "../HelperComponents/Button";
 
 export default function CheckoutInfo() {
   return (
