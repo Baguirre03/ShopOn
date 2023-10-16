@@ -7,6 +7,11 @@ import store3 from "../../assets/store-img2.png";
 import store4 from "../../assets/store-img3.png";
 import { Link } from "react-router-dom";
 
+import trending from "../../assets/store.png";
+import women from "../../assets/store1.png";
+import men from "../../assets/store2.png";
+import kid from "../../assets/store3.png";
+
 const deals = [
   { name: "Sale" },
   { name: "Under 30 min" },
@@ -31,23 +36,30 @@ const stores = [
 ];
 
 const storesStoreSelected = [
-  { name: "Trending", distance: "10.2", time: "42", fee: "$6", img: store1 },
-  { name: "Women's", distance: "5.5", time: "37", fee: "$5", img: store3 },
-  { name: "Men's", distance: "5.5", time: "37", fee: "$5", img: store1 },
-  { name: "Kid's", distance: "5.5", time: "37", fee: "$5", img: store4 },
+  { name: "Trending", distance: "10.2", time: "42", fee: "$6", img: trending },
+  { name: "Women's", distance: "5.5", time: "37", fee: "$5", img: women },
+  { name: "Men's", distance: "5.5", time: "37", fee: "$5", img: men },
+  { name: "Kid's", distance: "5.5", time: "37", fee: "$5", img: kid },
 ];
 
 export default function Shop() {
   let { name } = useParams();
   const [selected, setSelected] = useState("Store");
+  let link = "/shop/home";
+
   if (name === "home") {
     name = "";
   }
+  if (name === "") link = "/";
+
   return (
     <div className="shopping">
       <div className="header-shop">
-        <Link to="/shop/home">
-          <h2>ShopOn {name.charAt(0, 1).toUpperCase() + name.slice(1)}</h2>
+        <Link to={link}>
+          <h2>
+            <span className="shop-name">shopOn</span>{" "}
+            {name.charAt(0, 1).toUpperCase() + name.slice(1)}
+          </h2>
         </Link>
         <div className="inputs-shop">
           <input placeholder="16 E Pearson St, Chicago, IL 60611"></input>

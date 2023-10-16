@@ -894,6 +894,10 @@ a {
     font-size: 25px;
 }
 
+.shop-name:hover {
+    color: var(--brown);
+}
+
 .inputs-shop {
     display: flex;
     gap: 80px;
@@ -945,7 +949,7 @@ a {
 
 .category {
     font-family: "garet";
-    font-size: 20px;
+    font-size: 22px;
     background-color: var(--white);
     border: none;
 }
@@ -962,7 +966,7 @@ a {
 
 .deal {
     font-family: "garet";
-    font-size: 16px;
+    font-size: 18px;
     background-color: var(--white);
     border: 1px solid var(--grey);
     padding: 2px 20px 2px 20px;
@@ -982,7 +986,6 @@ a {
 
 .shopping-card {
     border-radius: 1rem;
-
     padding: 1rem;
 }
 
@@ -992,6 +995,10 @@ a {
     border: 1px solid black;
     transition: .5s all;
     transform: translateY(-5px);
+}
+
+.shopping-card:hover img {
+    border: .5px solid var(--brown);
 }
 
 .shopping-card img {
