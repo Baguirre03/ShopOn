@@ -1,8 +1,8 @@
 import Button from "../HelperComponents/Button";
-import money from "../assets/money.png";
-import people from "../assets/people.png";
-import clock from "../assets/clock.png";
-import face from "../assets/face.png";
+import money from "../../assets/money.png";
+import people from "../../assets/people.png";
+import clock from "../../assets/clock.png";
+import face from "../../assets/face.png";
 
 export default function WhyDrive() {
   return (

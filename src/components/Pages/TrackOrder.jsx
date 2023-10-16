@@ -1,4 +1,4 @@
-import track from "../assets/trackorder.png";
+import track from "../../assets/trackorder.png";
 export default function Track() {
   return (
     <div className="track-order-container">

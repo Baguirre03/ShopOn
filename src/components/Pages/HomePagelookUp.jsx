@@ -1,10 +1,10 @@
 import HomeCard from "../HelperComponents/HomeCard";
-import nike from "../assets/nike.png";
-import zara from "../assets/zara.png";
-import nordstrom from "../assets/nordstrom.svg";
-import loft from "../assets/loft.png";
-import gap from "../assets/gap.png";
-import madwell from "../assets/madwell.png";
+import nike from "../../assets/nike.png";
+import zara from "../../assets/zara.png";
+import nordstrom from "../../assets/nordstrom.svg";
+import loft from "../../assets/loft.png";
+import gap from "../../assets/gap.png";
+import madwell from "../../assets/madwell.png";
 
 const homeData = [
   {

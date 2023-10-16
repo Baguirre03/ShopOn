@@ -872,9 +872,140 @@ button:hover {
 
 /* SHOP CSS */
 
-.deal {
+
+.shopping {
+    display: flex;
+    flex-direction: column;
+    padding: var(--defaultPadding);
+    width: 100vw;
+    gap: 30px;
+    background-color: var(--white);
+}
+
+.header-shop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-shop h2 {
+    font-family: "hertical";
+    width: max-content;
+    font-size: 25px;
+}
+
+.inputs-shop {
+    display: flex;
+    gap: 80px;
+}
+
+.header-shop input {
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: var(--white);
+    width: 30vw;
+}
+
+.header-shop input::placeholder {
+    font-family: "garet";
+}
+
+.buttons-shop {
+    display: flex;
+    gap: 15px
+}
+
+.header-button {
+    display: flex;
+    background-color: var(--pink);
+    border-radius: 500rem;
+    align-items: center;
+    width: 50px;
+    border: none;
+    fill: var(--white);
+    padding: 4px;
+}
+
+.icon {
+    height: 5vh;
+    width: 5vw;
 }
 
 .deal.selected {
     background-color: var(--pink);
 }
+
+.categories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    font-family: "bogart";
+}
+
+.category {
+    font-family: "garet";
+    font-size: 20px;
+    background-color: var(--white);
+    border: none;
+}
+
+.category.selected {
+    color: var(--brown);
+}
+
+.deals {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.deal {
+    font-family: "garet";
+    font-size: 16px;
+    background-color: var(--white);
+    border: 1px solid var(--grey);
+    padding: 2px 20px 2px 20px;
+    border-radius: 1rem;
+}
+
+.stores-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns:  1fr 1fr ;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    width: 90%;
+    column-gap: 5rem;
+}
+
+.shopping-card {
+    border-radius: 1rem;
+
+    padding: 1rem;
+}
+
+.shopping-card:hover {
+    cursor: pointer;
+    background-color: var(--pink);
+    border: 1px solid black;
+    transition: .5s all;
+    transform: translateY(-5px);
+}
+
+.shopping-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.shopping-card h4 {
+    font-family: "bogart";
+    font-size: 25px;
+}
+
+.shopping-card p {
+    font-size: 16px;
+}
+

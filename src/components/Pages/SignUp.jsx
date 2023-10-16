@@ -1,5 +1,5 @@
 import Button from "../HelperComponents/Button";
-import image from "../assets/signup.png";
+import image from "../../assets/signup.png";
 
 export default function SignUp() {
   return (
