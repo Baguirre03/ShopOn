@@ -903,14 +903,31 @@ a {
     gap: 80px;
 }
 
-.header-shop input {
-    border: 1px solid black;
+.shop-search {    
+    border:none;
     border-radius: 1rem;
     background-color: var(--white);
     width: 30vw;
 }
 
-.header-shop input::placeholder {
+.shop-search-container {
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: var(--white);
+    display: flex;
+    height: 5vh;
+    padding: 3px;
+}
+
+.shop-search-svg {
+    align-items: center;
+    justify-content: center;
+    height: 3vh;
+    padding: 5px;
+    width: 3vw;
+}
+
+.shop-search::placeholder {
     font-family: "garet";
 }
 
