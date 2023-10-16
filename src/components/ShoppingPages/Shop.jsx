@@ -5,6 +5,7 @@ import store1 from "../../assets/store-img.png";
 import store2 from "../../assets/store-img1.png";
 import store3 from "../../assets/store-img2.png";
 import store4 from "../../assets/store-img3.png";
+import { Link } from "react-router-dom";
 
 const deals = [
   { name: "Sale" },
@@ -30,7 +31,7 @@ const stores = [
 ];
 
 const storesStoreSelected = [
-  { name: "Tending", distance: "10.2", time: "42", fee: "$6", img: "" },
+  { name: "Trending", distance: "10.2", time: "42", fee: "$6", img: store1 },
   { name: "Women's", distance: "5.5", time: "37", fee: "$5", img: store3 },
   { name: "Men's", distance: "5.5", time: "37", fee: "$5", img: store1 },
   { name: "Kid's", distance: "5.5", time: "37", fee: "$5", img: store4 },
@@ -45,7 +46,9 @@ export default function Shop() {
   return (
     <div className="shopping">
       <div className="header-shop">
-        <h2>ShopOn {name.charAt(0, 1).toUpperCase() + name.slice(1)}</h2>
+        <Link to="/shop/home">
+          <h2>ShopOn {name.charAt(0, 1).toUpperCase() + name.slice(1)}</h2>
+        </Link>
         <div className="inputs-shop">
           <input placeholder="16 E Pearson St, Chicago, IL 60611"></input>
           <input placeholder="Search stores, products, etc"></input>

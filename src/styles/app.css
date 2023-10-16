@@ -659,7 +659,7 @@ button:hover {
     gap: 10px;
 }
 
-.search-card-container a {
+a {
     color:black;
     text-decoration: none;
 }
