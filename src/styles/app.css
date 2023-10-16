@@ -1052,3 +1052,26 @@ a {
     gap: 20px;
     align-items: center;
 }
+
+.other-sections {
+    display: flex;
+    gap: 10px;
+}
+
+.options-category:hover {
+    color: var(--brown);
+}
+
+.options-category.selected {
+    color: var(--brown);
+}
+
+/* Browse Items  */
+
+.browse-items {
+    list-style: none;
+}
+
+.browse-items.selected {
+    background-color: var(--pink);
+}
