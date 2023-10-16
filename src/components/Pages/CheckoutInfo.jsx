@@ -12,7 +12,7 @@ export default function CheckoutInfo() {
           <li>Get 24/7 customer support</li>
           <li>We support contactless payment to make it easier for you</li>
         </ul>
-        <Button className="default-brown" to="signup">
+        <Button className="default-brown" to="shop/home">
           Shop Now
         </Button>
       </div>
