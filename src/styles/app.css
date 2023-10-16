@@ -1033,3 +1033,22 @@ a {
     font-size: 16px;
 }
 
+/* CLOTHES SECTION */
+
+.clothes-main-container {
+    display: flex;
+    flex-direction: column;
+    padding: var(--defaultPadding);
+}
+
+.header-clothes-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clothes-main-search-prof {
+    display: flex;
+    height: 6vh;
+    gap: 20px;
+    align-items: center;
+}

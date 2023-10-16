@@ -82,23 +82,21 @@ export default function Shop() {
         {categories.map((deal) => {
           if (deal.name === selected) {
             return (
-              <button
-                onClick={() => setSelected(deal.name)}
-                key={deal.name}
-                className={"category selected"}
-              >
+              <button key={deal.name} className={"category selected"}>
                 {deal.name}
               </button>
             );
           }
           return (
-            <button
-              onClick={() => setSelected(deal.name)}
-              key={deal.name}
-              className="category"
-            >
-              {deal.name}
-            </button>
+            <Link key={deal.name} to={"/category/" + deal.name.toLowerCase()}>
+              <button
+                onClick={() => setSelected(deal.name)}
+                key={deal.name}
+                className="category"
+              >
+                {deal.name}
+              </button>
+            </Link>
           );
         })}
       </div>
