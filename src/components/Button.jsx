@@ -6,6 +6,16 @@ const Button = ({ onClick, className, children, to, spanClass }) => {
   } else {
     className = `default-white ${className}`;
   }
+  if (className === `default-white slant`) {
+    return (
+      <Link to={to}>
+        <button className={className}>
+          <span className={spanClass}>{children}</span>
+        </button>
+      </Link>
+    );
+  }
+
   return to ? (
     <Link to={to}>
       <button className={className} onClick={onClick}>

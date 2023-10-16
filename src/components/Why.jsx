@@ -52,9 +52,7 @@ export default function WhyDrive() {
               <img src={clock}></img>
             </div>
             <div className="why-words">
-              <h4>
-                <bold>Flexible Scheduling</bold>
-              </h4>
+              <h4>Flexible Scheduling</h4>
               <desc>
                 From day one, you can work where you want and when you want
               </desc>

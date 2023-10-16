@@ -2,6 +2,8 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import SignIn from "./components/SignIn";
 import WelcomeDriver from "./components/DriverSignup";
+import Shop from "./components/Shop";
+import { element } from "prop-types";
 
 const Router = () => {
   const router = createBrowserRouter([
@@ -20,6 +22,10 @@ const Router = () => {
     {
       path: "login",
       element: <SignIn></SignIn>,
+    },
+    {
+      path: "shop/:name",
+      element: <Shop name={name}></Shop>,
     },
   ]);
   return <RouterProvider router={router}></RouterProvider>;

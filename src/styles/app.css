@@ -61,7 +61,6 @@
 .top-home h4 {
     font-family: "hertical";
     font-size: 25px;
-    /* letter-spacing: 3px; */
 }
 
 .cta-header {
@@ -86,6 +85,8 @@
 .slogan {
     display: flex;
     font-size: 70px;
+    text-align: center;
+
 }
 
 .description {
@@ -658,10 +659,15 @@ button:hover {
     gap: 10px;
 }
 
+.search-card-container a {
+    color:black;
+    text-decoration: none;
+}
+
 .home-card {
     display: flex;
     font-family: "garet";
-    font-size: 17px;
+    font-size: 20px;
     align-items: center;
     border: 1px solid black;
     border-radius: 10px;
@@ -674,7 +680,6 @@ button:hover {
 
 .home-card:hover {
     cursor: pointer;
-    color: white;
     background-color: var(--pink);
     transition: .2s all;
     transform: translateY(-2px);
@@ -687,6 +692,28 @@ button:hover {
 .home-card img {
     max-width: 100%;
     height: auto;
+}
+
+.right-side-home {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-distance {
+    background-color: var(--pink);
+    width: max-content;
+    border-radius: 1rem;
+    padding: 2px 20px 2px 20px;
+    align-self: center;
+    justify-self: center;
+}
+
+.home-card:hover .home-distance {
+    background-color: var(--white);
+    color: black;
 }
 
 @media (max-width: 560px) {
@@ -841,4 +868,13 @@ button:hover {
         gap: 0;
         font-size: 33px;
     }
+}
+
+/* SHOP CSS */
+
+.deal {
+}
+
+.deal.selected {
+    background-color: var(--pink);
 }

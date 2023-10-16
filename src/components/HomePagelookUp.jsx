@@ -11,31 +11,37 @@ const homeData = [
     src: nike,
     time: "10:30am",
     distance: ".2",
+    name: "nike",
   },
   {
     src: zara,
     time: "5:00pm",
-    distance: "9",
+    distance: "8",
+    name: "zara",
   },
   {
     src: nordstrom,
     time: "4:00pm",
     distance: "9",
+    name: "nordstrom",
   },
   {
     src: loft,
     time: "2:30pm",
     distance: "4",
+    name: "loft",
   },
   {
     src: madwell,
     time: "1:30pm",
     distance: "5",
+    name: "madewell",
   },
   {
     src: gap,
     time: "11:30am",
     distance: ".3",
+    name: "gap",
   },
 ];
 

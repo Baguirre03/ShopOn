@@ -6,7 +6,7 @@ export default function Track() {
       <div className="track-content">
         <img src={track} alt="Computer with distance on it" />
         <p>
-          Watch your driver pick up your clothes and deliver right to your door.
+          Watch your driver pick up your clothes and deliver right to your door
         </p>
       </div>
     </div>
