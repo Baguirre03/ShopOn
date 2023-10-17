@@ -1039,6 +1039,7 @@ a {
     display: flex;
     flex-direction: column;
     padding: var(--defaultPadding);
+    height: 100vh;
 }
 
 .header-clothes-main {
@@ -1068,6 +1069,90 @@ a {
 
 /* Browse Items  */
 
+.dif-name {
+    font-family: "bogart";
+    text-transform: uppercase;
+}
+
+.options-category {
+    font-family: "Bogart";
+    font-size: 22px;
+}
+
+.browse-by-container {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: flex-start;
+    gap: 2rem;
+    overflow: scroll;
+}
+
+.browse-by-card  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    overflow: scroll;
+}
+
+.browse-card {
+    display: flex;
+    flex-direction: column;
+    font-size:18px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    gap: 10px;
+}
+
+.browse-card-children {
+    display: flex;
+    flex-direction: column;
+    font-size:18px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+
+}
+
+.browse-card:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.browse-card img {
+    border-radius: 1rem;
+    height: 90%;
+    width: 80%;
+}
+
+.browse-by-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+.browse-by-list h4 {
+    font-size: 30px;
+    font-family: "bogart";
+    font-weight: normal;
+    border-bottom: 10px solid black;
+}
+
+.browse-by-list li {
+    cursor: pointer;
+    font-family: "bogart";
+    font-size: 22px;
+    padding: 4px 20px 4px 20px;
+}
+
+.browse-by-list li:hover {
+ background-color: var(--pink);
+}
+
 .browse-items {
     list-style: none;
 }
@@ -1075,3 +1160,4 @@ a {
 .browse-items.selected {
     background-color: var(--pink);
 }
+

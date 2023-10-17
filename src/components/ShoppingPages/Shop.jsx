@@ -39,9 +39,9 @@ const stores = [
 
 const storesStoreSelected = [
   { name: "Trending", distance: "10.2", time: "42", fee: "$6", img: trending },
-  { name: "Women's", distance: "5.5", time: "37", fee: "$5", img: women },
-  { name: "Men's", distance: "5.5", time: "37", fee: "$5", img: men },
-  { name: "Kid's", distance: "5.5", time: "37", fee: "$5", img: kid },
+  { name: "Womens", distance: "5.5", time: "37", fee: "$5", img: women },
+  { name: "Mens", distance: "5.5", time: "37", fee: "$5", img: men },
+  { name: "Kids", distance: "5.5", time: "37", fee: "$5", img: kid },
 ];
 
 export default function Shop() {
@@ -91,22 +91,21 @@ export default function Shop() {
       </div>
       <div className="deals">
         {deals.map((deal) => {
-          if (deal.name === selected) {
-            return (
+          return deal.name === "Store" ? (
+            <Link to="/shop/home">
               <button
                 onClick={() => setSelected(deal.name)}
                 key={deal.name}
-                className={"deal selected"}
+                className={deal.name === selected ? "deal selected" : "deal"}
               >
                 {deal.name}
               </button>
-            );
-          }
-          return (
+            </Link>
+          ) : (
             <button
               onClick={() => setSelected(deal.name)}
               key={deal.name}
-              className="deal"
+              className={deal.name === selected ? "deal selected" : "deal"}
             >
               {deal.name}
             </button>
@@ -116,10 +115,18 @@ export default function Shop() {
       <div className="stores-home">
         {name !== ""
           ? storesStoreSelected.map((store) => (
-              <ShoppingCard key={store.name} data={store}></ShoppingCard>
+              <ShoppingCard
+                handleClick={() => setSelected("")}
+                key={store.name}
+                data={store}
+              ></ShoppingCard>
             ))
           : stores.map((store) => (
-              <ShoppingCard key={store.name} data={store}></ShoppingCard>
+              <ShoppingCard
+                handleClick={() => setSelected("")}
+                key={store.name}
+                data={store}
+              ></ShoppingCard>
             ))}
       </div>
     </div>

@@ -36,9 +36,15 @@ export default function BrowseBy({ currentBrowse, handleBrowse, browseBy }) {
         ) : (
           browseBy.map((opt, index) => {
             return (
-              <div onClick={() => handleBrowse(index)} key={opt.name}>
-                <img src={opt.img}></img>
-                <p key={opt}>{opt.name}</p>
+              <div
+                className="browse-card"
+                onClick={() => handleBrowse(index)}
+                key={opt.name}
+              >
+                <div className="browse-card-children">
+                  <img src={opt.img}></img>
+                  <p key={opt}>{opt.name}</p>
+                </div>
               </div>
             );
           })

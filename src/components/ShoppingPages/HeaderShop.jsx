@@ -23,7 +23,8 @@ export default function HeaderShop({ handleBrowse }) {
       <div className="header-shop">
         <Link to="/shop/home">
           <h2 className="welcome">
-            <span className="shop-name">ShopOn</span> {name}
+            <span className="shop-name">ShopOn</span>{" "}
+            <span className="dif-name">{name}</span>
           </h2>
         </Link>
       </div>
