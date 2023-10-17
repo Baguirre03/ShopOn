@@ -14,8 +14,7 @@ export default function About() {
         </div>
       </div>
       <div className="address">
-        <p>123 Anywhere St., Any City</p>
-        <p>State, Country 12345</p>
+        <p>Headquartered in Chicago, IL</p>
       </div>
     </div>
   );
