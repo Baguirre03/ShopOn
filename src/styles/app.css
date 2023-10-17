@@ -1112,6 +1112,7 @@ a {
     align-items: center;
     border-radius: 1rem;
     width: 100%;
+    flex: 1;
     gap: 10px;
     padding: 10px;
 
@@ -1161,3 +1162,42 @@ a {
     background-color: var(--pink);
 }
 
+
+.sort-by {
+    align-self: flex-end;
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container {
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    overflow: scroll;
+}
+
+
+.browse-items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.browse-card.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.browse-card img {
+    height: 100%;
+    width: 100%;
+}
+
+.category-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

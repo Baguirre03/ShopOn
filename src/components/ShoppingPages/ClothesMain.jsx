@@ -24,11 +24,22 @@ export default function ClothesMain() {
           <ProfileCart></ProfileCart>
         </div>
       </div>
-      <span>Sort By Featured</span>
+      <span className="sort-by">
+        Sort By{" "}
+        <form>
+          <select>
+            <option value="">Featured</option>
+            <option value="">Best Sellers</option>
+            <option value="">Fastest</option>
+            <option value="">Price</option>
+          </select>
+        </form>
+      </span>
       <BrowseBy
         browseBy={browseBy}
         currentBrowse={currentBrowse}
         handleBrowse={handleBrowse}
+        defaultBrowse={browseDefault}
       ></BrowseBy>
     </div>
   );

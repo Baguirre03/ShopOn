@@ -1,12 +1,15 @@
 import ItemCard from "../HelperComponents/ItemCard";
 
-export default function BrowseBy({ currentBrowse, handleBrowse, browseBy }) {
-  console.log(currentBrowse);
+export default function BrowseBy({
+  currentBrowse,
+  handleBrowse,
+  browseBy,
+  defaultBrowse,
+}) {
   return (
     <div className="browse-by-container">
       <ul className="browse-by-list">
         <h4>Browse By:</h4>
-        <span className="line"></span>
         {browseBy.map((opt, index) => {
           return (
             <div
@@ -22,12 +25,27 @@ export default function BrowseBy({ currentBrowse, handleBrowse, browseBy }) {
             </div>
           );
         })}
+        <div
+          className={
+            currentBrowse === "categories"
+              ? "browse-items selected"
+              : "browse-items"
+          }
+          onClick={() => defaultBrowse()}
+        >
+          <li>Categories</li>
+        </div>
       </ul>
-      <div className="browse-by-card">
+      <div
+        className={
+          currentBrowse !== "categories"
+            ? "browse-no-categories"
+            : "browse-by-card"
+        }
+      >
         {currentBrowse !== "categories" ? (
           <div key={currentBrowse.name} className="container">
-            <h3>{currentBrowse.name}</h3>
-            <div className="category-items">
+            <div className="browse-items-grid">
               {currentBrowse.items.map((item) => (
                 <ItemCard key={item.name} data={item}></ItemCard>
               ))}
