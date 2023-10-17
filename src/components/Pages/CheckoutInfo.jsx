@@ -10,7 +10,7 @@ export default function CheckoutInfo() {
           <li>Order before 2 pm and get your purchase within the day</li>
           <li>Not your size? Avail our hassle-free return policy</li>
           <li>Get 24/7 customer support</li>
-          <li>We support contactless payment to make it easier for you</li>
+          <li>We support contactless</li>
         </ul>
         <Button className="default-brown" to="shop/home">
           Shop Now
