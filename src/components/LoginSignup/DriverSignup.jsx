@@ -1,5 +1,6 @@
 import BackButton from "../HelperComponents/BackButton";
 import Button from "../HelperComponents/Button";
+import { Link } from "react-router-dom";
 
 export default function WelcomeDriver({ driver }) {
   return (
@@ -8,6 +9,11 @@ export default function WelcomeDriver({ driver }) {
         <div className="welcome-left">
           <h2>Welcome Future {driver ? "Driver" : "Shopper"}</h2>
           <p>We're so happy you're here.</p>
+          {driver && (
+            <Button className="default-pink" to="/driver/info">
+              Learn More About How it Works
+            </Button>
+          )}
         </div>
         <div className="welcome-right">
           <label htmlFor="phone-email">
